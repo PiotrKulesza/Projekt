@@ -1,0 +1,22 @@
+#firstlabel {
+  width:100px;
+  display: inline-block;
+}
+
+#prawa
+{
+    float: right;
+    background-color: lightgreen;
+    margin-right: auto;
+}
+
+#menu
+{
+	background-color: #01222b;
+}
+
+.center-block{
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+}
