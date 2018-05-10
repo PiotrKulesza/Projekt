@@ -24,16 +24,23 @@
 		<div class="wraper">
 			<nav class="menu">
 				<div class="menu-center">
-					<a href="${str }"><img src="images/ikona home.png" alt="Error" width="80px" height="80px"/></a>
+					<a href="${str}"><img src="images/ikona home.png" alt="Error" width="80px" height="80px"/></a>
 					<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error" width="80px" height="80px"/></a>
-					<a href="${str }"><img src="images/ikona help.png" alt="Error" width="80px" height="80px"/></a>
-					<a href="${str }"><img src="images/ikona usos.png" alt="Error" width="80px" height="80px"/></a>
+					<a href="${str}"><img src="images/ikona help.png" alt="Error" width="80px" height="80px"/></a>
+					<a href="${str}"><img src="images/ikona usos.png" alt="Error" width="80px" height="80px"/></a>
 				</div>
 			</nav>
 			<div class="content">
 				<main>
 					<h1 class="main-title">Repozytorium<div>sprawozdañ</div></h1>
 				</main>
+				<div class="Logowanie">
+				<form action="Login" method="post">
+				<label id="firstlabel">Login:</label> <input type="text" name="uname" size="15"><br>
+				<label id="firstlabel">Password:</label> <input type="password" name="pass" size="15"><br>
+				<input name="Zal_Btn" type="button" value="Zaloguj">
+				</form>
+				</div>
 				<div class="login-button" >
 				<h2>logowanie</h2>
 					<img src="images/logk.png" alt="Submit">
