@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
 <meta name="viewport" content="width-device-width, initial-scale=1">
+<script type="text/javascript" src="script.js"></script>
 <title>Projekt</title>
 <link rel="Stylesheet" type="text/css" href="style.css" />
 </head>
@@ -38,7 +39,7 @@
 				<form action="Login" method="post">
 				<label id="firstlabel">Login:</label> <input type="text" name="uname" size="15"><br>
 				<label id="firstlabel">Password:</label> <input type="password" name="pass" size="15"><br>
-				<input name="Zal_Btn" type="button" value="Zaloguj">
+				<input id="Zal_Btn" type="submit" value="Zaloguj">
 				</form>
 				</div>
 				<div class="login-button" >

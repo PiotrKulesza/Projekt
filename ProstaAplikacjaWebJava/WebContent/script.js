@@ -1,13 +1,9 @@
 /**
  * 
  */
-
-$(function(){
-	
-	$("Zal_btn").click(function(){
+	$('#Zal_btn').click(function()
+	{
 		
-		$("Zal_btn").hide();
-		
+		$('#Zal_btn').hide();
 	});
 	
-});
