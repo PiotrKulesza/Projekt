@@ -34,6 +34,7 @@
 		
 		<a class="center-block" href="index2.jsp"><img src="images/Home.jpg" alt="Error" /></a><br>
 		<a class="center-block" href="http://www.utp.edu.pl/pl/"><img src="images/UTP.jpg" alt="Error" /></a><br>
+		
 		<form action="Logout">
 			<input class="center-block" type="image" src="images/Zaloguj.jpg" alt="Wyloguj">
 		</form>

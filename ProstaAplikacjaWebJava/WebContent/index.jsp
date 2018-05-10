@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
     pageEncoding="ISO-8859-2"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
@@ -8,8 +8,10 @@
 <title>Projekt</title>
 <link rel="Stylesheet" type="text/css" href="style.css" />
 </head>
-<body bgcolor="#00FFFF">
-
+<body>
+	<script>
+		
+	</script>
 		<%
 		
 		String str;
@@ -19,29 +21,31 @@
 		}else str="index2.jsp";
 	
 		%>
-		<div style="float:right; border: 1px solid black; width: 20%;">
-		<div style=" font-size: 18px; border: 1px solid black;"> 
-		Twoj dane:
+		<div class="wraper">
+			<nav class="menu">
+				<div class="menu-center">
+					<a href="${str }"><img src="images/ikona home.png" alt="Error" width="80px" height="80px"/></a>
+					<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error" width="80px" height="80px"/></a>
+					<a href="${str }"><img src="images/ikona help.png" alt="Error" width="80px" height="80px"/></a>
+					<a href="${str }"><img src="images/ikona usos.png" alt="Error" width="80px" height="80px"/></a>
+				</div>
+			</nav>
+			<div class="content">
+				<main>
+					<h1 class="main-title">Repozytorium<div>sprawozdań</div></h1>
+				</main>
+				<div class="login-button" >
+				<h2>logowanie</h2>
+					<img src="images/logk.png" alt="Submit">
+				</div>
+				</div>
+			</div>
 		</div>
-		<div style="font-size: 16px; border: 1px solid black;"> 
-		<form action="Login" method="post">
-			<label id="firstlabel">Login:</label> <input type="text" name="uname" size="25"><br>
-			<label id="firstlabel">Password:</label> <input type="password" name="pass" size="25"><br>
-			<input class="center-block" type="image" src="images/Zaloguj.jpg" alt="Submit">
-		</form>
-		</div>
-		</div>
-		<div style="float:right; border: 1px solid black; width: 100%;">
-		
-		<div style="float:left; border: 1px solid black; width: 20%;">
 		
 		
-		<a class="center-block" href="${str }"><img src="images/Home.jpg" alt="Error" /></a><br>
-		<a class="center-block" href="http://www.utp.edu.pl/pl/"><img src="images/UTP.jpg" alt="Error" /></a><br>
-		
-		</div>
 		
 		
-		</div>
+		
+		
 </body>
 </html>
