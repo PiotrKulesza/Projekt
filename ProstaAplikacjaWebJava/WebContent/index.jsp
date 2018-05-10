@@ -5,21 +5,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
 <meta name="viewport" content="width-device-width, initial-scale=1">
-<script type="text/javascript" src="script.js"></script>
 <title>Projekt</title>
 <link rel="Stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-	<script>
-		
-	</script>
 		<%
 		
 		String str;
 				
-		if(session.getAttribute("username")==null){
-			str="index.jsp";
-		}else str="index2.jsp";
+		if(session.getAttribute("username")!=null){
+			str="index2.jsp";
+			
+		}else str="index.jsp";
 	
 		%>
 		<div class="wraper">
@@ -35,25 +32,25 @@
 				<main>
 					<h1 class="main-title">Repozytorium<div>sprawozdań</div></h1>
 				</main>
-				<div class="Logowanie">
-				<form action="Login" method="post">
-				<label id="firstlabel">Login:</label> <input type="text" name="uname" size="15"><br>
-				<label id="firstlabel">Password:</label> <input type="password" name="pass" size="15"><br>
-				<input id="Zal_Btn" type="submit" value="Zaloguj">
-				</form>
+				<div class="Loguj">
+					<form action="Login" method="post">
+						<label class="firstlabel">Login:</label> <input type="text" name="uname" size="15"><br>
+						<label class="firstlabel">Password:</label> <input type="password" name="pass" size="15"><br>
+						<input id="Zal_Btn" type="submit" value="Zaloguj">
+					</form>
 				</div>
 				<div class="login-button" >
 				<h2>logowanie</h2>
-					<img src="images/logk.png" alt="Submit">
+					<input type="image" src="images/logk.png" alt="Pokaz" onclick="toggole('picture')">
 				</div>
 				</div>
 			</div>
-		</div>
 		
 		
 		
 		
 		
 		
+	<script type="text/javascript" src="showHide.js"></script>	
 </body>
 </html>
