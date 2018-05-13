@@ -25,41 +25,18 @@
 					<a href="${str}"><img src="images/ikona home.png" alt="Error" width="80px" height="80px"/></a>
 					<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error" width="80px" height="80px"/></a>
 					<a href="${str}"><img src="images/ikona help.png" alt="Error" width="80px" height="80px"/></a>
-					<a href="https://usosweb.utp.edu.pl/kontroler.php?_action=actionx:news/default()"><img src="images/ikona usos.png" alt="Error" width="80px" height="80px"/></a>
+					<a href="${str}"><img src="images/ikona usos.png" alt="Error" width="80px" height="80px"/></a>
 				</div>
 			</nav>
 			<div class="content">
 				<main>
-					<h1 class="main-title">Repozytorium<div>sprawozdañ</div></h1>
+					<h1 class="main-title2">Podano z³e has³o albo login.</h1>
 					<div id="Loguj">
 					<form action="Login" method="post">
-						<label class="firstlabel">Login</label></br><input type="text" name="uname" size="40"></br>
-						<label class="firstlabel">Password</label></br> <input type="password" name="pass" size="30"></br></br>
+						<label class="firstlabel">Login:</label> <input type="text" name="uname" size="15"><br>
+						<label class="firstlabel">Password:</label> <input type="password" name="pass" size="15"><br>
 						<input id="Zal_Btn" type="submit" value="Zaloguj">
 					</form>
 				</div>
 				</main>
-				<div class="login-button" >
-				<p1>logowanie</p1>
-					<input id="przycisk" class=login-button type="image" src="images/logk.png" alt="Pokaz">
-				</div>
-				</div>
 			</div>
-		
-		
-		
-		
-		
-	<script type="text/javascript">
-	document.getElementById("przycisk").addEventListener("click", schowaj);
-	
-	function schowaj(){
-		if(document.getElementById("Loguj").style.display=="block")
-			document.getElementById("Loguj").style.display = "none";	
-		else{
-			document.getElementById("Loguj").style.display = "block";
-		}
-	}
-	</script>	
-</body>
-</html>
