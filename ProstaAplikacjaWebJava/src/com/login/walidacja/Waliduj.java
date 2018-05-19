@@ -8,17 +8,17 @@ import java.sql.SQLException;
 
 public class Waliduj {
 	
-	String url="jdbc:mysql://localhost:3306/uczelnia";
+	String url="jdbc:mysql://localhost:3306/uczelnia?useTimezone=true&serverTimezone=UTC";
 	String username="root";
 	String password="121212";
 	
 	public boolean Waliduje(String uname,String pass) {
-		String sql="SELECT email,haslo FROM logowanie WHERE email='?' AND haslo='?'";
+		
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(url,username,password);
-			PreparedStatement st=con.prepareStatement(sql);
+			PreparedStatement st=con.prepareStatement("SELECT email,haslo FROM logowanie WHERE email=? AND haslo=?");
 			st.setString(1,uname);
 			st.setString(2,pass);
 			ResultSet rs = st.executeQuery();

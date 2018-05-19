@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.login.walidacja.Sesja;
 import com.login.walidacja.Waliduj;
 
 @WebServlet("/Login")
@@ -16,6 +17,7 @@ public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	Waliduj wal = new Waliduj();
+	Sesja ses = new Sesja();
   
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -23,12 +25,30 @@ public class Login extends HttpServlet {
 		String pass = request.getParameter("pass"); 
 		
 		if(wal.Waliduje(uname, pass)) {
+			String prac = ses.Pracownik(uname, pass);
+			String stu = ses.Student(uname, pass);
 			
 			HttpSession session = request.getSession();
-			session.setAttribute("username",uname);
-			response.sendRedirect("index2.jsp");
-		}else {
-			response.sendRedirect("index.jsp");
+			
+			if(prac!=null) {
+				session.setAttribute("username",prac);
+				response.sendRedirect("index2.jsp");
+			} else if(stu!=null) {
+				session.setAttribute("username",stu);
+				response.sendRedirect("index3.jsp");
+			}else response.sendRedirect("index.jsp");
+			
+			/*if(prac.equals(null)) {
+				if(stu.equals(null)) {
+					response.sendRedirect("index.jsp");
+				}else {
+					session.setAttribute("username",stu);
+					response.sendRedirect("index3.jsp");
+				}
+			}else {
+				session.setAttribute("username",prac);
+				response.sendRedirect("index2.jsp");
+			}*/
 		}
 		
 	}
