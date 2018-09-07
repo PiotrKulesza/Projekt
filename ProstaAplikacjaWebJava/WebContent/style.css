@@ -37,12 +37,6 @@ nav.menu .menu-center img{
 	width: 80px;
 	height: 80px;
 }
-nav.menu .subjects{
-position: absolute;
-left:70px;
-z-index: 1;
-
-}
 .content{
 	background-image:url("images/tlo.jpg");
 	width:100vw;
@@ -125,7 +119,7 @@ main h1.main-title > div{
 .center-block2{
 	display:block;
 	position: absolute;
-	right:70px;
+	right:130px;
 	top:0px;
 	width:120px; 
 	height:120px;
@@ -134,7 +128,7 @@ main h1.main-title > div{
 #Loguj{
 	position: absolute;
 	top:40%;
-	left:calc(50% - 100px);
+	left:calc(50% - 130px);
 	color: #fff;
 	font-size: 20px;
 	font-weight: 15;
@@ -145,7 +139,7 @@ main h1.main-title > div{
 #Loguj2{
 	position: absolute;
 	top:40%;
-	left:calc(50% - 100px);
+	left:calc(50% - 130px);
 	color: #fff;
 	font-size: 20px;
 	font-weight: 15;
@@ -165,21 +159,21 @@ main h1.main-title > div{
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 }
-.menu_przedmitow a{
-position:relative;
-	top:200px;
-	left:80px;
+.menu_przedmitow {
+position: absolute;
+	top:150px;
+	left:100px;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 15;
 	text-align: center;
 	font-family: "Arial", sans-serif;
 }
-.menu_przedmitow p2{
+.menu_przedmitow h1 {
 position: absolute;
-	top:200px;
-	right:500px;
-	color: #fff;
+	top:400px;
+	left:100px;
+	color: white;
 	font-size: 20px;
 	font-weight: 15;
 	text-align: center;
@@ -187,11 +181,122 @@ position: absolute;
 }
 .podstrona h1{
 	position: absolute;
-	top:10px;
-	left:calc(50% - 250px);
-	color: red;
+	top:50px;
+	right:calc(700px);
+	color: white;
 	font-size: 50px;
 	font-weight: 15;
 	text-align: center;
 	font-family: "Arial", sans-serif;
 }
+.podstrona h2{
+	position: absolute;
+	top:50px;
+	left:calc(100px);
+	color: white;
+	font-size: 50px;
+	font-weight: 15;
+	text-align: center;
+	font-family: "Arial", sans-serif;
+}
+main h1.main-title2{
+	position: absolute;
+	top:25%;
+	left:calc(50% - 80px);
+	transform: translate(-25%,-50%);
+	color: #fff;
+	font-size: 70px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+}
+#Loguj2 h1{
+	position: absolute;
+	top:25%;
+	left:calc(50% - 40px);
+	transform: translate(-25%,-50%);
+	color: #ee3211;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+}
+.tabela{
+	position: absolute;
+	top:25%;
+	left:calc(30% - 10px);
+	transform: translate(-25%,-50%);
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+}
+main h1.main-title3{
+	position: absolute;
+	top:25%;
+	left:calc(50% - 150px);
+	transform: translate(-25%,-50%);
+	color: #fff;
+	font-size: 70px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+}
+.tabelau {
+	position: absolute;
+	top:30%;
+	left:500px;
+	transform: translate(-25%,-50%);
+	color: #fff;
+	font-size: 30px;
+	font-weight: 15;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+}
+.tabelau1 {
+	position: absolute;
+	top:30%;
+	left:550px;
+	transform: translate(-25%,-50%);
+	color: #fff;
+	font-size: 30px;
+	font-weight: 15;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+}
+.tabelau1 h4{
+	color: yellow;
+}
+.tabelau1 h5{
+	color: red;
+}
+	.tabelau2 {
+		position: absolute;
+		top:30%;
+		left:400px;
+		transform: translate(-25%,-50%);
+		color: #fff;
+		font-size: 30px;
+		font-weight: 15;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Arial", sans-serif;
+	}
+			.tabelau3 {
+		position: absolute;
+		top:280px;
+		left:500px;
+		transform: translate(-25%,-50%);
+		color: #fff;
+		font-size: 30px;
+		font-weight: 15;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Arial", sans-serif;
+	}

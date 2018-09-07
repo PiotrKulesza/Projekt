@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Sesja {
-	private String url="jdbc:mysql://localhost:3306/uczelnia?useTimezone=true&serverTimezone=UTC";
+	private String url="jdbc:mysql://db:3306/uczelnia?useTimezone=true&serverTimezone=UTC";
 	private String username="root";
 	private String password="121212";
 	private String pracownik=null;

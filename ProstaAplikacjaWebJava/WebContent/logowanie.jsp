@@ -38,6 +38,7 @@
 						<label class="firstlabel">Login<input type="text" name="uname" size="40"></label>
 						<label class="firstlabel">Password<input type="password" name="pass" size="30"></label>
 						<input id="Zal_Btn" type="submit" value="Zaloguj">
+						</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br><h1 >Podano z³e dane</h1>
 					</form>
 				</div>
 				</main>

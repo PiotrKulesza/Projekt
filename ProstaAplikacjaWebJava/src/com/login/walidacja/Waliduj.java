@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class Waliduj {
 	
-	String url="jdbc:mysql://localhost:3306/uczelnia?useTimezone=true&serverTimezone=UTC";
+	String url="jdbc:mysql://db:3306/uczelnia?useTimezone=true&serverTimezone=UTC";
 	String username="root";
 	String password="121212";
 	

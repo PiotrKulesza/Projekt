@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-2"
-    pageEncoding="ISO-8859-2"%>
+    pageEncoding="ISO-8859-2"
+    import="java.sql.ResultSet" 
+    import="com.pracownik.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,28 +29,33 @@
 	%>
 	
 	<div class="wraper">
-			<nav class="menu">
-				<div class="menu-center">
-					<a href="${str }"><img src="images/ikona home.png" alt="Error"></a>
-					<a href="${str }"><img src="images/ikona grupy.png" alt="Error"></a>
-					<a href="${str }"><img src="images/ikona przedmioty.png" alt="Pokaz"></a>
-					<a href="${str }"><img src="images/ikona sprawozdania.png" alt="Error"></a>
-					<a href="${str }"><img src="images/ikona studenci.png" alt="Error"></a>
-					<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error"></a>
-					<a href="${str }"><img src="images/ikona help.png" alt="Error"></a>
-				</div>
-				<div class="subjects">
-				<a href="${str }"><img src="images/ramka przedmiot.png" alt="Error" width="300px" height="65px"/></a>
-				</div>
-			</nav>
-			<div class="contentdwa">
-				<div id="table">
-					<a href="${str }"><img src="images/opusc grupe ikona.png" alt="Error" width="60px" height="70px"/></a>
-					<a href="${str }"><img src="images/podejmij przedmiot ikona.png" alt="Error" width="80px" height="80px"/></a>
-					<a href="${str }"><img src="images/porzuc przedmiot ikona.png" alt="Error" width="80px" height="80px"/></a>
-					<a href="${str }"><img src="images/dodaj nowa grupe ikona.png" alt="Error" width="80px" height="80px"/></a>
-				</div>	
-			</div>	
+		<nav class="menu">
+			<div class="menu-center">
+				<a href="${str }"><img src="images/ikona home.png" alt="Error"></a>
+				<a href="przedmioty_p.jsp"><img src="images/ikona sprawozdania.png" alt="Pokaz"></a>
+				<a href="przedmioty_p2.jsp"><img src="images/wyslij.png" alt="Error"></a>
+				<a href="nauczajlab_p.jsp"><img src="" alt="nauczaj lab"></a>
+				<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error"></a>
+				<a href="${str }"><img src="images/ikona help.png" alt="Error"></a>
+			</div>
+		</nav>
+		<div class="contentdwa">
+			<main class="podstrona2">
+				<% 
+					if(session.getAttribute("username")!=null){
+						String x = session.getAttribute("username").toString();
+						Pracownik prac = new Pracownik(); 
+						ResultSet dane = prac.danePracownika(x);
+						while(dane.next()){
+				%>
+				<h1 class="main-title3">Witaj pracowniku: <% out.print("\""+dane.getString("imie")+" "+ dane.getString("nazwisko")+"\""); %></h1>
+				<%
+						}
+					}
+				
+				%>
+			</main>
+		</div>	
 		<div class="login-button" >
 			<form action="Logout">
 				<input class="center-block2" type="image" src="images/wylog.png" alt="Wyloguj">

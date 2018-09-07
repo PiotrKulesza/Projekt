@@ -35,21 +35,10 @@ public class Login extends HttpServlet {
 				response.sendRedirect("index2.jsp");
 			} else if(stu!=null) {
 				session.setAttribute("username",stu);
-				response.sendRedirect("index3.jsp");
+				response.sendRedirect("uczen.jsp");
 			}else response.sendRedirect("index.jsp");
 			
-			/*if(prac.equals(null)) {
-				if(stu.equals(null)) {
-					response.sendRedirect("index.jsp");
-				}else {
-					session.setAttribute("username",stu);
-					response.sendRedirect("index3.jsp");
-				}
-			}else {
-				session.setAttribute("username",prac);
-				response.sendRedirect("index2.jsp");
-			}*/
-		}
+		}else response.sendRedirect("logowanie.jsp");
 		
 	}
 

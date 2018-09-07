@@ -20,6 +20,8 @@ public class Logout extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		session.removeAttribute("username");
+		session.removeAttribute("przedmiot");
+		session.removeAttribute("dane");
 		session.invalidate();
 		response.sendRedirect("index.jsp");
 	}
