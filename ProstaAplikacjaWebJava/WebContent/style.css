@@ -225,8 +225,8 @@ main h1.main-title2{
 }
 .tabela{
 	position: absolute;
-	top:25%;
-	left:calc(30% - 10px);
+	top:30%;
+	left:calc(50% - 250px);
 	transform: translate(-25%,-50%);
 	color: white;
 	font-size: 20px;
@@ -237,7 +237,7 @@ main h1.main-title2{
 main h1.main-title3{
 	position: absolute;
 	top:25%;
-	left:calc(50% - 150px);
+	left:calc(50% - 200px);
 	transform: translate(-25%,-50%);
 	color: #fff;
 	font-size: 70px;
@@ -259,7 +259,7 @@ main h1.main-title3{
 	font-family: "Arial", sans-serif;
 }
 .tabelau1 {
-	position: absolute;
+	position: relative;
 	top:30%;
 	left:550px;
 	transform: translate(-25%,-50%);
@@ -300,3 +300,36 @@ main h1.main-title3{
 		text-transform: uppercase;
 		font-family: "Arial", sans-serif;
 	}
+	main h1.main-title4{
+	position: absolute;
+	top:30%;
+	left:calc(50% - 80px);
+	transform: translate(-25%,-50%);
+	color: #fff;
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+	}
+	.tabelau4 {
+		position: relative;
+		top:30%;
+		left:400px;
+		transform: translate(-25%,-50%);
+		color: #fff;
+		font-size: 25px;
+		font-weight: 15;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Arial", sans-serif;
+	}
+	
+.wraper.tlo2 h1{
+		position: absolute;
+	top:30%;
+	left:calc(10% - 80px);
+	color: #fff;
+	font-size:40px;
+		font-weight: 15;
+}

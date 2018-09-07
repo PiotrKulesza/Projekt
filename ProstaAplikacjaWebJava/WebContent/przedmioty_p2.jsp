@@ -20,7 +20,7 @@
 		
 		response.setHeader("Expires", "0");
 		
-		session.setMaxInactiveInterval(600);
+		
 		
 		if(session.getAttribute("username")==null){
 			response.sendRedirect("index.jsp");
@@ -31,27 +31,23 @@
 	<div class="wraper tlo2">
 			<nav class="menu">
 				<div class="menu-center">
-					<a href="index2.jsp"><img src="images/ikona home.png" alt="Error"></a>
-					<a href="przedmioty_p.jsp"><img src="images/ikona sprawozdania.png" alt="Pokaz"></a>
-					<a href="przedmioty_p2.jsp"><img src="images/wyslij.png" alt="Error"></a>
-					<a href="nauczajlab_p.jsp"><img src="" alt="nauczaj lab"></a>
-					<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error"></a>
-					<a href="${str }"><img src="images/ikona help.png" alt="Error"></a>
+					<a href="index2.jsp"><img src="images/ikona home.png" alt="Error" title="Katalog domowy pracownika"></a>
+				<a href="przedmioty_p.jsp"><img src="images/ikona sprawozdania.png" alt="Pokaz"title="Sprawdz sprawozdanie ucznia"></a>
+				<a href="przedmioty_p2.jsp"><img src="images/wyslij.png" alt="Error"title="Wy¶lij instrukcje"></a>
+				<a href="nauczajlab_p.jsp"><img src="images/podejmij.png" title="Ucz laboratoriów"></a>
+				<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error"title="Strona UTP"></a>>
 				</div>
 
 				
 			<div class="subjects">
-			<a href="${str }"><img src="images/ramka przedmiot.png" alt="Error" width="300px" height="65px"/></a>
+			<a href="${str }"><img src="images/baner_3.png" alt="Error" width="300px" height="65px"/></a>
 			</div>
 		</nav>
 		
 		
 		
 		<main class="podstrona">
-		<div class="menu_grupy">
-				
-				<h2> Przedmiot </h2>
-				</div>		
+		
 			<div class="menu_przedmitow">
 			<div class ="tabelau2">
 			</br></br></br></br></br></br><table align="center" border=2>
@@ -75,14 +71,16 @@
 				%>
 					<tr>
 						<th><input type="radio" name="dane" value="<%out.print(dane); %>"> <%out.print(dane); %></th>
+						</tr>
 				<%
 					}else if(i%3==1){
 
-				%>
+				%><tr>
 						<th><input type="radio" name="dane" value="<%out.print(dane); %>"> <%out.print(dane); %></th>
+						</tr>
 				<%
 					}else{
-				%>
+				%><tr>
 						<th><input type="radio" name="dane" value="<%out.print(dane); %>"> <%out.print(dane); %></th>
 					</tr>
 				

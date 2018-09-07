@@ -23,9 +23,9 @@
 			<nav class="menu">
 				<div class="menu-center">
 					<a href="${str}"><img src="images/ikona home.png" alt="Error"></a>
-					<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error"></a>
-					<a href="${str}"><img src="images/ikona help.png" alt="Error"></a>
-					<a href="https://usosweb.utp.edu.pl/kontroler.php?_action=actionx:news/default()"><img src="images/ikona usos.png" alt="Error"></a>
+					<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error" title="Strona UTP"></a>
+					<a href="informacje.jsp"><img src="images/ikona help.png" alt="Error" title="Informacje"></a>
+					<a href="https://usosweb.utp.edu.pl/kontroler.php?_action=actionx:news/default()"><img src="images/ikona usos.png" alt="Error" title="Usosweb"></a>
 				</div>
 				
 				
@@ -43,7 +43,7 @@
 				</main>
 				<div class="login-button" >
 				<p1>logowanie</p1>
-					<input id="przycisk" class=login-button type="image" src="images/logk.png" alt="Pokaz">
+					<input id="przycisk" class=login-button type="image" src="images/logk.png" alt="Pokaz"title="Wyloguj" >
 				</div>
 				</div>
 			</div>

@@ -16,7 +16,7 @@
 	
 		response.setHeader("Expires", "0");
 		
-		session.setMaxInactiveInterval(600);
+		
 		
 		if(session.getAttribute("username")==null){
 			response.sendRedirect("index.jsp");

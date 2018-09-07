@@ -20,7 +20,7 @@
 		
 		response.setHeader("Expires", "0");
 		
-		session.setMaxInactiveInterval(600);
+		
 		
 		if(session.getAttribute("username")==null){
 			response.sendRedirect("index.jsp");
@@ -31,16 +31,14 @@
 	<div class="wraper tlo2">
 		<nav class="menu">
 			<div class="menu-center">
-				<a href="${str }"><img src="images/ikona home.png" alt=""></a>
-				<a href="przedmioty_u.jsp"><img src="images/ikona przedmioty.png" alt=""></a>
-				<a href="podejmijlab_u.jsp"><img src="" alt="podjete laborki"></a>
-				<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt=""></a>
-				<a href="${str }"><img src="images/ikona help.png" alt=""></a>
+				<a href="${str }"><img src="images/ikona home.png" alt=""title="Katalog domowy ucznia"></a>
+				<a href="przedmioty_u.jsp"><img src="images/ikona przedmioty.png" alt=""title="Wysy³anie sprawozdania"></a>
+			    <a href="podejmijlab_u.jsp"><img src="images/podejmij.png" alt="podjete laborki"title="Podejmowanie laboratorium "></a>
+				<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="" title="Strona UTP"></a>
+				
 				
 			</div>
-			<div class="subjects">
-			<a href="${str }"><img src="images/ramka przedmiot.png" alt="Error" width="300px" height="65px"/></a>
-			</div>
+			
 		</nav>
 		<% 
 		if(session.getAttribute("username")!=null){
@@ -51,7 +49,7 @@
 		%>
 		<main class="podstrona2">
 			
-				<h1 class="main-title">Witaj uczniu: <% out.print("\""+dane.getString("imie")+" "+ dane.getString("nazwisko")+"\""); %>  </h1>
+				<h1 class="main-title4">Witaj uczniu<br> <% out.print(dane.getString("imie")+" "+ dane.getString("nazwisko")); %>  </h1>
 			
 			
 		</main>
@@ -61,7 +59,7 @@
 		%>
 		<div class="login-button" >
 		<form action="Logout">
-			<input class="center-block2" type="image" src="images/wylog.png" alt="Wyloguj">
+			<input class="center-block2" type="image" src="images/wylog.png" alt="Wyloguj" title="Wyloguj">
 		</form>
 		
 	</div>

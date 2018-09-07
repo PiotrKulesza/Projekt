@@ -20,7 +20,7 @@
 		
 		response.setHeader("Expires", "0");
 		
-		session.setMaxInactiveInterval(600);
+		
 		
 		if(session.getAttribute("username")==null){
 			response.sendRedirect("index.jsp");
@@ -31,11 +31,10 @@
 	<div class="wraper tlo2">
 		<nav class="menu">
 			<div class="menu-center">
-				<a href="uczen.jsp"><img src="images/ikona home.png" alt=""></a>
-				<a href="przedmioty_u.jsp"><img src="images/ikona przedmioty.png" alt=""></a>
-				<a href="podejmijlab_u.jsp"><img src="" alt="podjete laborki"></a>
-				<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt=""></a>
-				<a href="${str }"><img src="images/ikona help.png" alt=""></a>
+					<a href="uczen.jsp"><img src="images/ikona home.png" alt=""title="Katalog domowy ucznia"></a>
+				<a href="przedmioty_u.jsp"><img src="images/ikona przedmioty.png" alt=""title="Wysy³anie sprawozdania"></a>
+			    <a href="podejmijlab_u.jsp"><img src="images/podejmij.png" alt="podjete laborki"title="Podejmowanie laboratorium "></a>
+				<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="" title="Strona UTP"></a>
 				
 			</div>
 			<div class="subjects">
@@ -47,14 +46,14 @@
 		
 		<main class="podstrona">
 		
-			<h1>Przedmioty</h1>
+		
 		
 			<div class="menu_przedmitow">
 				<div class ="tabelau">
 			</br></br></br></br></br></br><table align="center" border=2>
 			<form action="Szukaj" method="post">
 				 <tr>
-				 	<th colspan="3">Przedmiot</th>
+				 	<th colspan="3">Przedmioty</th>
 				  </tr>
 				
 				<%

@@ -20,7 +20,7 @@
 		
 		response.setHeader("Expires", "0");
 		
-		session.setMaxInactiveInterval(600);
+	
 		
 		if(session.getAttribute("username")==null){
 			response.sendRedirect("index.jsp");
@@ -31,12 +31,10 @@
 	<div class="wraper tlo2">
 		<nav class="menu">
 			<div class="menu-center">
-				<a href="${str }"><img src="images/ikona home.png" alt="Error"></a>
-				<a href="przedmioty_p.jsp"><img src="images/ikona sprawozdania.png" alt="Pokaz"></a>
-				<a href="przedmioty_p2.jsp"><img src="images/wyslij.png" alt="Error"></a>
-				<a href="nauczajlab_p.jsp"><img src="" alt="nauczaj lab"></a>
-				<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="Error"></a>
-				<a href="${str }"><img src="images/ikona help.png" alt="Error"></a>
+						<a href="uczen.jsp"><img src="images/ikona home.png" alt=""title="Katalog domowy ucznia"></a>
+				<a href="przedmioty_u.jsp"><img src="images/ikona przedmioty.png" alt=""title="Wysy³anie sprawozdania"></a>
+			    <a href="podejmijlab_u.jsp"><img src="images/podejmij.png" alt="podjete laborki"title="Podejmowanie laboratorium "></a>
+				<a href="http://www.utp.edu.pl/pl/"><img src="images/ikona utp.png" alt="" title="Strona UTP"></a>
 				
 			</div>
 			<div class="subjects">
